@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/RandomX42069/AS-AvalonShell/blob/main/ASLogo.png" alt="AS-AvalonShell Logo" width="600"/>
+  <img src="https://github.com/RandomX42069/AS-AvalonShell/blob/main/SLogo.png" alt="AS-AvalonShell Logo" width="600"/>
 </p>
 
 ## What is AvalonShell?
@@ -12,6 +12,7 @@
 - 5: Admin Privileges: AvalonShell have a function that relaunch AvalonShell with Admin Privileges named `admin`
 
 - 6: Decent for Systematic Devs: have symbols like: || && & ;
+
 
 
 
