@@ -1,4 +1,6 @@
-# AvalonShell
+<p align="center">
+  <img src="images/avalon-shell.png" alt="AS-AvalonShell Logo" width="300"/>
+</p>
 
 ## What is AvalonShell?
 - Avalon Shell is a Hybrid-Shell(Unix-simplifed + Windows + Custom CMDS) and there are 5 features that makes AvalonShell powerful:
@@ -8,4 +10,5 @@
 - 3: Paste from clipboard: AvalonShell have a built-in `paste` cmd that will paste from your clipboard
 - 4: Run file: AvalonShell have 2 built-in run cmds: `runfile` & `runsel`. `runfile` will run a file that **contains** `AvalonShell's instruction` and `runsel` will open a file dialog to choose a file that have AvalonShell's instructions and run it, just like runfile but improved in QOL
 - 5: Admin Privileges: AvalonShell have a function that relaunch AvalonShell with Admin Privileges named `admin`
+
 - 6: Decent for Systematic Devs: have symbols like: || && & ;
