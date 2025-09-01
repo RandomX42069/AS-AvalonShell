@@ -5,17 +5,40 @@
 </p>
 
 ## What is AvalonShell?
-- Avalon Shell is a Hybrid-Shell(Unix-simplifed + Windows + Custom CMDS) and there are 5 features that makes AvalonShell powerful:
 
-- 1: Multi-path support: `AvalonShell` uses slots to store paths and you can use the built-in `slot` cmd to switch slot from 1 to 10 and you can also create unlimited custom slots with `newslot`, switch custom slot with `cslot` and switch directory or updating that slot with `scd`
-- 2: Shell linking: You can use `slink` to execute cmds+args to other shells like `cmd prompt` on **Windows** and `gnome-terminal` on Linux\MacOS
-- 3: Paste from clipboard: AvalonShell have a built-in `paste` cmd that will paste from your clipboard
-- 4: Run file: AvalonShell have 2 built-in run cmds: `runfile` & `runsel`. `runfile` will run a file that **contains** `AvalonShell's instruction` and `runsel` will open a file dialog to choose a file that have AvalonShell's instructions and run it, just like runfile but improved in QOL
-- 5: Admin Privileges: AvalonShell have a function that relaunch AvalonShell with Admin Privileges named `admin`
+AvalonShell is a **hybrid shell** (Unix-simplified + Windows + custom commands) with powerful features:
 
-- 6: Decent for Systematic Devs: have symbols like: || && & ;
+1. **Multi-path Support:**  
+   Use `slots` to store paths. Switch between slots 1–10 with the built-in `slot` command.  
+   Create unlimited custom slots with `newslot`, switch with `cslot`, and update or change directory with `scd`.
 
+2. **Shell Linking:**  
+   Use `slink` to execute commands and arguments in other shells like `cmd.exe` on **Windows** or `gnome-terminal` on **Linux/macOS**.
 
+3. **Clipboard Paste:**  
+   Use the `paste` command to directly paste clipboard content into AvalonShell.
 
+4. **Run File:**  
+   Two built-in commands:  
+   - `runfile` – run a file containing AvalonShell instructions.  
+   - `runsel` – open a file dialog to select a file containing instructions (QOL improvement over `runfile`).
 
+5. **Admin Privileges:**  
+   Use `admin` to relaunch AvalonShell with elevated privileges.
 
+6. **SysAdmin-Friendly Symbols:**  
+   Supports Bash-like symbols: `||`, `&&`, `&`, `;` for familiar scripting and automation.
+
+---
+
+## How to Set Up AvalonShell
+
+### Software Requirements
+[![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python)](https://www.python.org/)  
+[![PyInstaller](https://img.shields.io/badge/PyInstaller-Module-blue?logo=python)](https://pyinstaller.org/en/stable/) (**optional** for building executables)
+
+### Build Executable with PyInstaller
+```powershell
+python -m PyInstaller AvalonShell.py
+# Optional: include an icon for a cooler look
+python -m PyInstaller -i icon.ico AvalonShell.py
