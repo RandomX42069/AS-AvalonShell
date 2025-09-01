@@ -42,3 +42,7 @@ AvalonShell is a **hybrid shell** (Unix-simplified + Windows + custom commands) 
 python -m PyInstaller AvalonShell.py
 # Optional: include an icon for a cooler look
 python -m PyInstaller -i icon.ico AvalonShell.py
+```
+---
+## MIT-License
+[![MIT-License](https://img.shields.io/badge/MIT-License-Green?)](https://github.com/RandomX42069/AS-AvalonShell/blob/main/license.md)
