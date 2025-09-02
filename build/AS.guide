@@ -27,3 +27,72 @@
             "./AvalonShell.exe"
         [PowerShell-or-Cmd.exe]:
             "<path/to/AS>AvalonShell.exe"
+
+
+
+[AS-in-MSYS2-Setup-Guide(Mingw32-64)]
+    [Requirements&Installation]:
+        Update-MSYS2:   pacman -Syu
+
+        Git(64-bits):               pacman -S mingw-w64-i686-git
+        Git(32-bits):               pacman -S mingw-w64-x86_64-git
+
+        Python(+Pip-64-bits):       pacman -S mingw-w64-x86_64-python3 mingw-w64-x86_64-python3-pip
+        Python(+Pip-32-bits):       pacman -S mingw-w64-i686-python3 mingw-w64-i686-python3-pip
+
+        GCC(64-bits):               pacman -S mingw-w64-x86_64-gcc
+        GCC(32-bits):               pacman -S mingw-w64-i686-gcc
+
+        PyInstaller:                pip install PyInstaller
+
+    [Verify]:
+        Git:            git --version
+        Python:         python --version
+        GCC:            gcc --version
+        PyInstaller:    pip show PyInstaller
+
+    [Instructions]:
+        [Optional]:
+            Git-Copy:       git clone https://github.com/RandomX42069/AS-AvalonShell.git
+        
+        [Normal-Way]:
+            Python:         [
+                            python -m PyInstaller \
+                            --noconfirm --onefile \
+                            --console --icon icon.ico \
+                            --distpath build src\Python\AvalonShell.py
+                            ]
+
+            GCC:            [
+                            gcc -shared \
+                            -g src\C\TrustedInstallerAdjustments.c \
+                            -o src\C\TrustedInstallerAdjustments.dll \
+                            -ladvapi32
+                            ]
+
+            Setup:          [
+                            mv src\C\AvalonShell.exe build
+                            mv src\C\TrustedInstallerAdjustments.dll build
+                            ]
+            
+            Start-Your-Session:
+                            [
+                            cd build
+                            ./AvalonShell.exe
+                            ]
+
+
+
+        [Git-Way]:
+            Clone:          [
+                            git clone https://github.com/RandomX42069/AS-AvalonShell.git
+                            cd AS-AvalonShell
+                            ]
+
+            Simple:         "After cloning, run the normal way:
+                                - Python build
+                                - GCC build
+                                - Move files to build/
+                            "
+
+            
