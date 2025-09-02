@@ -1,0 +1,16 @@
+[Build-Python-Main]:
+    "-m", "PyInstaller",
+    "--noconfirm",
+    "--onefile",
+    "--console",
+    "--icon", "icon.ico",
+    "--distpath", "build",
+    "src\\Python\\AvalonShell.py"
+
+[C-Backbone-TrustedInstallerAdjustments]:
+
+    "-shared",
+    "-g",
+    "TrustedInstallerAdjustments.c",
+    "-o",
+    "TrustedInstallerAdjustments.dll",
