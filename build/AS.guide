@@ -1,16 +1,29 @@
-[Build-Python-Main]:
-    "-m", "PyInstaller",
-    "--noconfirm",
-    "--onefile",
-    "--console",
-    "--icon", "icon.ico",
-    "--distpath", "build",
-    "src\\Python\\AvalonShell.py"
+[Quick-AS-Setup-Guide]
+    [Requirements]:
+        Python 3.x (cross-platform)
+        pip (for PyInstaller)
+        MSYS2 with gcc (for C DLL compilation)
+        Git (optional, if cloning from repo)
 
-[C-Backbone-TrustedInstallerAdjustments]:
-    "-shared",
-    "-g",
-    "TrustedInstallerAdjustments.c",
-    "-o",
-    "TrustedInstallerAdjustments.dll",
-    "-ladvapi32"
+    [Build-Python-Main]:
+        "-m", "PyInstaller",
+        "--noconfirm",
+        "--onefile",
+        "--console",
+        "--icon", "icon.ico",
+        "--distpath", "build",
+        "src\\Python\\AvalonShell.py"
+
+    [C-Backbone-TrustedInstallerAdjustments]:
+        "-shared",
+        "-g",
+        "TrustedInstallerAdjustments.c",
+        "-o",
+        "TrustedInstallerAdjustments.dll",
+        "-ladvapi32"
+
+    [Launch-AS-with]:
+        [Bash]:
+            "./AvalonShell.exe"
+        [PowerShell-or-Cmd.exe]:
+            "<path/to/AS>AvalonShell.exe"
