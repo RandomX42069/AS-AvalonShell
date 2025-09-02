@@ -37,12 +37,10 @@ AvalonShell is a **hybrid shell** (Unix-simplified + Windows + custom commands) 
 [![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python)](https://www.python.org/)  
 [![PyInstaller](https://img.shields.io/badge/PyInstaller-Module-blue?logo=python)](https://pyinstaller.org/en/stable/) (**optional** for building executables)
 
-### Build Executable with PyInstaller
-```powershell
-python -m PyInstaller AvalonShell.py
-# Optional: include an icon for a cooler look
-python -m PyInstaller -i icon.ico AvalonShell.py
-```
+### Build Guide
+[![AS.guide](https://img.shields.io/badge/AS-Guide-red?)](https://github.com/RandomX42069/AS-AvalonShell/blob/main/build/AS.guide)
+
 ---
 ## MIT-License
 [![MIT-License](https://img.shields.io/badge/MIT-License-Green?)](https://github.com/RandomX42069/AS-AvalonShell/blob/main/license.md)
+
