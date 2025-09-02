@@ -8,9 +8,9 @@
     "src\\Python\\AvalonShell.py"
 
 [C-Backbone-TrustedInstallerAdjustments]:
-
     "-shared",
     "-g",
     "TrustedInstallerAdjustments.c",
     "-o",
     "TrustedInstallerAdjustments.dll",
+    "-ladvapi32"
